@@ -1,27 +1,5 @@
 using UnityEngine;
 
-[System.Serializable]
-public class PlayerStats
-{
-    public int BasePower = 10;
-    public int BaseHealth = 100;
-    public int BaseSpeed = 10;
-
-    [HideInInspector] public int TotalPower;
-    [HideInInspector] public int TotalHealth;
-    [HideInInspector] public int TotalSpeed;
-}
-
-public enum XPRewardType
-{
-    MonsterKill,
-    GearSold,
-    IdleOnline,
-    IdleOffline,
-    Quest,
-    QuantumGate
-}
-
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance;
